@@ -6,7 +6,7 @@ assignments = {} ## email: [1, 2, 3, 4, 5]
 hacks = {}
 with open("hacks.csv", "r") as f:
     for line in f.readlines():
-    	cols = line.replace('\n', '').split(',')
+    	cols = line.replace('\n', '').split('\t')
     	hacks[cols[0]] = {
     		"name": cols[1],
             "innovation_betterThan": [],
@@ -18,14 +18,14 @@ with open("hacks.csv", "r") as f:
 
 with open("assignments.csv", "r") as f:
     for line in f.readlines():
-    	cols = line.replace('\n', '').split(',')
+    	cols = line.replace('\n', '').split('\t')
     	assignments[cols[1]] = cols[2:]
         for c in assignments[cols[1]]:
             hacks[c]["judgeCount"] += 1
 
 with open("judging.csv", "r") as f:
     for line in f.readlines():
-    	cols = line.replace('\n', '').split(',')
+    	cols = line.replace('\n', '').split('\t')
     	email = cols[2]
         for i in range(0, 6):
             # if 'isMobile' in hacks[ assignments[email][i] ]:
@@ -85,17 +85,17 @@ designList = sorted(hacks.values(), key=lambda (item): -1 * item['designScore'])
 innovationList = sorted(hacks.values(), key=lambda (item): -1 * item['innovationScore']);
 overallList = sorted(hacks.values(), key=lambda (item): -1 * item['overallScore']);
 
-print "\nDesign List:"
+print "Design Ranking:"
 for i in range(0, 10):
-    pprint(designList[i]['name']);
+    pprint(designList[i]["name"]);
 
-print "\nInnovation List:"
+print "\nInnovation Ranking:"
 for i in range(0, 10):
-    pprint(innovationList[i]['name']);
+    pprint(innovationList[i]["name"]);
 
-print "\nOverall List:"
+print "\nOverall Ranking:"
 for i in range(0, 10):
-    pprint(overallList[i]['name']);
+    pprint(overallList[i]["name"]);
 
 
 with open("data.json", "w") as outFile:
