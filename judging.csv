@@ -1,4 +1,25 @@
-5/17/2015 13:42:49	Juliana 1	1@example.com	mobile	no	web	yes	mobile	no	web	yes	mobile	yes	9, 5, 3, 2, 6	5, 3, 2, 6, 9	2, 5, 3, 6, 9										
-5/17/2015 13:45:00	Juliana 2	2@example.com	mobile	no	mobile	yes	neither	no	web	no	web	yes	1, 6, 10, 3, 8	3, 1, 6, 10, 8	6, 3, 1, 10, 8										
-5/17/2015 13:45:43	Juliana 3	3@example.com	neither	yes	web	yes	web	no	mobile	no	web	no	10, 5, 2, 4, 6	6, 10, 4, 2, 5	5, 2, 6, 4, 10										
-5/17/2015 13:46:41	Juliana 4	4@example.com	web	no	mobile	no	mobile	yes	web	no	neither	yes	1, 9, 4, 7, 8	9, 8, 1, 4, 7	4, 7, 1, 9, 8										
+5/17/2015 15:52:50,Judge 25,judge25@hacktj.org,web,yes,neither,no,web,no,web,no,neither,no,mobile,yes,10, 53, 39, 46, 52, 20,10, 53, 39, 46, 52, 20,10, 53, 46, 39, 52, 20
+5/17/2015 16:05:35,Judge 03,judge3@hacktj.org,mobile,yes,web,no,web,yes,mobile, web,no,mobile,no,web,no,28, 32, 5, 26, 35, 36,26, 5, 32, 28, 35, 36,5, 32, 28, 26, 35, 36
+5/17/2015 16:08:29,Judge 22,judge22@hacktj.org,mobile,yes,web,no,mobile,yes,mobile,no,mobile,no,mobile,no,3, 28, 50, 1, 26, 47,50, 1, 3, 47, 28, 46,50, 28, 3, 1, 46, 47
+5/17/2015 16:12:54,Judge 26,judge26@hacktj.org,mobile,no,mobile,yes,mobile, web,no,mobile, web,no,mobile,yes,mobile,no,4, 38, 34, 41, 47, 8,38, 41, 4, 34, 47, 8,38, 4, 41, 34, 47, 8
+5/17/2015 16:14:38,Judge 4,judge4@hacktj.org,web,no,mobile,yes,web,yes,neither,no,web,no,web,no,53, 25, 27, 16, 44, 47,27, 44, 53, 16, 25, 47,53, 44, 27, 16, 25, 47
+5/17/2015 16:16:06,Judge 17,judge17@hacktj.org,mobile, web,yes,mobile, web,yes,web,no,web,no,web,no,mobile, web,no,30, 53, 45, 36, 39, 1,45, 53, 1, 36, 30, 39,53, 45, 1, 30, 39, 36
+5/17/2015 16:16:12,Judge 19,judge19@hacktj.org,mobile,yes,web,no,web,yes,mobile,yes,mobile, web,no,mobile, web,no,7, 11, 12, 29, 45, 5,11, 12, 7, 45, 29, 5,7, 11, 12, 45, 29, 5
+5/17/2015 16:19:06,Judge 14,judge14@hacktj.org,web,no,mobile,no,neither,no,web,yes,mobile,no,web,no,13, 23, 50, 19, 37, 24,50, 19, 23, 13, 37, 24,23, 19, 13, 50, 37, 24 
+5/17/2015 16:23:39,Judge 16,judge16@hacktj.org,web,no,mobile,no,mobile,no,web,no,neither,no,web,no,16, 43, 17, 1, 14, 52,1, 14, 16, 43, 17, 52,1, 14,43, 16, 17, 52
+5/17/2015 16:24:28,Judge 12,judge12@hacktj.org,mobile,no,neither,no,web,no,web,yes,web,no,mobile,no,22, 2, 6, 51, 33,2, 51, 6, 33, 22,6, 2, 51, 22, 33
+5/17/2015 16:24:59,Judge 24,judge24@hacktj.org,mobile,no,neither,yes,mobile,no,mobile,no,web,yes,web,yes,15, 51, 18, 22, 49, 25,15, 18, 51, 49, 25, 22,15, 51, 18, 22, 49, 25
+5/17/2015 16:26:38,Judge 15,judge15@hacktj.org,web,no,web,yes,web,no,neither,no,mobile,no,web,no,7, 19, 54, 3, 26, 14,26, 3, 19, 14, 54, 7,3, 14, 7, 26, 19, 54
+5/17/2015 16:27:34,Judge 08,judge8@hacktj.org,web,no,web,no,mobile,no,web,no,mobile,no,mobile,no,7,30,17,34,35,14,14,30,7,34,17,35,7,30,34,17,14,35
+5/17/2015 16:30:29,Judge 23,judge23@hacktj.org,web,yes,web,yes,neither,no,web,no,mobile,yes,mobile,no,19, 43, 2, 44, 29, 52,19, 2, 44, 29, 43, 52,19, 44, 29, 2, 43, 52
+5/17/2015 16:31:44,Judge 01,judge1@hacktj.org,neither,no,mobile, web,no,neither,no,web,no,mobile, web,no,web,yes,21, 18, 10, 3, 25, 52,10, 18, 21, 3, 25, 52,10, 18, 21, 3, 25, 52
+5/17/2015 16:31:56,Judge 11,judge11@hacktj.org,web,no,neither,no,neither,no,neither,no,web,yes,web,no,44,54,13,58,33,40,44,13,54,58,33,40,44,13,54,58,33,40
+5/17/2015 16:33:18,Judge 10,judge10@hacktj.org,web,yes,mobile,yes,mobile, web,no,mobile,no,web,yes,mobile,yes,32, 50, 39, 43, 8, 42,32, 50, 39, 43, 8, 42,32, 50, 39, 43, 8, 42
+5/17/2015 16:33:39,Judge 07,judge7@hacktj.org,mobile,yes,web,yes,web,yes,mobile,yes,mobile, web,no,web,yes,23,37,51,41,49,31,37,23,41,51,31,49,37,23,51,41,31,49
+5/17/2015 16:36:07,Judge 13,judge13@hacktj.org,mobile,no,mobile,no,mobile,no,mobile,yes,web,yes,neither,no,13, 23, 12, 21, 46, 31,23, 12, 13, 46, 21, 31,23, 13, 21, 12, 46, 31
+5/17/2015 16:37:02,Judge 02,judge2@hacktj.org,web,no,mobile,no,mobile,yes,web,no,web,yes,web,yes,28, 9, 16, 42, 49, 26,9, 26, 16, 49, 42, 28,9, 26, 49, 16, 28, 42
+5/17/2015 16:38:59,Judge 21,judge21@hacktj.org,mobile, web,no,web,no,web,no,neither,yes,mobile,no,web,no,45,2,21,17,35,6,2,45,21,17,6,35,45,2,21,17,35,6
+5/17/2015 16:39:46,Judge 20,judge20@hacktj.org,mobile,yes,mobile,no,mobile, web,no,web,yes,web,no,mobile,no,9,44,15,11,41,33,44,41,9,15,11,33,44,15,11,9,41,44
+5/17/2015 16:47:36,Judge 05,judge5@hacktj.org,web,no,mobile,yes,neither,no,mobile,no,mobile,no,mobile,no,8,5,11,22,27,34,11,5,27,34,22,8,11,27,5,34,22,8
+5/17/2015 16:47:47,Judge 09,judge9@hacktj.org,web,yes,web,no,web,yes,mobile,no,mobile,yes,neither,no,9,32,27,37,42,8,9,32,37,42,27,8,9,32,37,27, 42,8
+5/17/2015 17:09:18,Judge 06,judge6@hacktj.org,mobile,no,web,yes,mobile, web,no,neither,yes,mobile,no,web,no,15, 18, 4, 54, 6, 24,4, 18, 15, 24, 54, 6,15, 24, 18, 4, 54, 6

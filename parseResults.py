@@ -1,11 +1,12 @@
 from pprint import pprint
 import operator
+from json import dumps
 
 assignments = {} ## email: [1, 2, 3, 4, 5]
 hacks = {}
 with open("hacks.csv", "r") as f:
     for line in f.readlines():
-    	cols = line.replace('\n', '').split('\t')
+    	cols = line.replace('\n', '').split(',')
     	hacks[cols[0]] = {
     		"name": cols[1],
             "innovation_betterThan": [],
@@ -17,43 +18,42 @@ with open("hacks.csv", "r") as f:
 
 with open("assignments.csv", "r") as f:
     for line in f.readlines():
-    	cols = line.replace('\n', '').split('\t')
+    	cols = line.replace('\n', '').split(',')
     	assignments[cols[1]] = cols[2:]
         for c in assignments[cols[1]]:
             hacks[c]["judgeCount"] += 1
 
 with open("judging.csv", "r") as f:
     for line in f.readlines():
-        print "line"
-    	cols = line.replace('\n', '').split('\t')
+    	cols = line.replace('\n', '').split(',')
     	email = cols[2]
-        for i in range(0, 5):
-            if 'isMobile' in hacks[ assignments[email][i] ]:
-                if ("mobile" in cols[2*i+3].lower()) != hacks[ assignments[email][i] ]['isMobile']:
-                    print "Alert: judge different mobile for hack"+assignments[email][i]
+        for i in range(0, 6):
+            # if 'isMobile' in hacks[ assignments[email][i] ]:
+            #     if ("mobile" in cols[2*i+3].lower()) != hacks[ assignments[email][i] ]['isMobile']:
+            #         print "ALERT: judge chose different value for mobile for hack at table "+assignments[email][i]
             hacks[ assignments[email][i] ]['isMobile'] = ("mobile" in cols[2*i+3].lower())
 
-            if 'isWeb' in hacks[ assignments[email][i] ]:
-                if ("web" in cols[2*i+3].lower()) != hacks[ assignments[email][i] ]['isWeb']:
-                    print "Alert: judge different web for hack"+assignments[email][i]
+            # if 'isWeb' in hacks[ assignments[email][i] ]:
+            #     if ("web" in cols[2*i+3].lower()) != hacks[ assignments[email][i] ]['isWeb']:
+            #         print "ALERT: judge chose different value for web for hack at table "+assignments[email][i]
             hacks[ assignments[email][i] ]['isWeb'] = ("web" in cols[2*i+3].lower())
 
-            if 'isBeginner' in hacks[ assignments[email][i] ]:
-                if ("mobile" in cols[2*i+4].lower()) != hacks[ assignments[email][i] ]['isBeginner']:
-                    print "Alert: judge different beginner for hack"+assignments[email][i]
+            # if 'isBeginner' in hacks[ assignments[email][i] ]:
+            #     if ("mobile" in cols[2*i+4].lower()) != hacks[ assignments[email][i] ]['isBeginner']:
+            #         print "ALERT: judge chose different value for mobile for hack at table "+assignments[email][i]
             hacks[ assignments[email][i] ]['isBeginner'] = (cols[2*i+4].lower() == "yes")
 
-        innovationRanking = cols[13].replace(' ', '').split(',')
+        innovationRanking = cols[15].replace(' ', '').split(',')
         for i, n in enumerate(innovationRanking):
             if i+1 < len(innovationRanking):
                 hacks[ n ]['innovation_betterThan'] += innovationRanking[i+1:]
 
-        designRanking = cols[14].replace(' ', '').split(',')
+        designRanking = cols[16].replace(' ', '').split(',')
         for i, n in enumerate(designRanking):
             if i+1 < len(designRanking):
                 hacks[ n ]['design_betterThan'] += designRanking[i+1:]
 
-        overallRanking = cols[15].replace(' ', '').split(',')
+        overallRanking = cols[17].replace(' ', '').split(',')
         for i, n in enumerate(overallRanking):
             if i+1 < len(overallRanking):
                 hacks[ n ]['overall_betterThan'] += overallRanking[i+1:]
@@ -97,4 +97,6 @@ print "\nOverall List:"
 for i in range(0, 10):
     pprint(overallList[i]['name']);
 
-# pprint(hacks)
+
+with open("data.json", "w") as outFile:
+    outFile.write(dumps(hacks))
